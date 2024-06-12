@@ -1,0 +1,634 @@
+@import url(https: //fonts.googleapis.com/css?family=Cherry+Swash);
+
+html {
+  height: 100%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  vertical-align: middle;
+}
+
+p {
+  line-height: 20px;
+}
+
+.header {
+  width: 100%;
+  background: rgb(245, 194, 6);
+  line-height: 10px;
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+
+.header header {
+  width: 65%;
+  margin: 0 auto;
+  font-family: sans-serif;
+}
+
+.logo {
+  width: 39%;
+  display: inline-block;
+  font-size: 18px;
+  font: 900;
+  color: #fff;
+}
+
+.menu {
+  width: 60%;
+  display: inline-block;
+  font-size: 16px;
+  color: #fff;
+}
+
+.hamburgur {
+  font-size: 30px;
+  display: none;
+  color: #fff;
+}
+
+.menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+}
+
+.menu ul li {
+  display: inline-block;
+  padding: 0 13px;
+}
+
+.menu ul li a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.menu ul li a:hover {
+  color: #0b4786;
+  transition: 1s;
+}
+
+/* end header here */
+.section-1 {
+  background-attachment: fixed;
+}
+
+.section-1 .background {
+  background: rgb(245, 194, 6);
+  background-image: url('../images/background-image.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-attachment: fixed;
+  height: calc(100% - 54px);
+  position: absolute;
+  transform: skewY(-6deg);
+  transform-origin: 0;
+  z-index: -1;
+}
+
+.section-1 .content {
+  min-height: 350px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  color: #f2f2f2;
+}
+
+.section-1 .content .container {
+  width: 65%;
+  margin: auto;
+  font-family: sans-serif;
+  position: relative;
+  bottom: 50px;
+}
+
+.title {
+  font-size: 50px;
+  font-weight: 650;
+  text-shadow: 0.1em 0.1em rgba(0, 0, 0, 0.2);
+  margin: 0;
+  padding-top: 10px;
+  line-height: 20px;
+}
+
+/* end section 1 here */
+.section-2 {
+  width: 100%;
+  text-align: center;
+  /* line-height: 20px; */
+  /* background-color: red; */  
+}
+
+.section-2 .container {
+  width: 64%;
+  margin: auto;
+  text-align: center;
+  font-size: 17px;
+  line-height: 22px;
+  font-family: sans-serif;
+  color: #0b4786;
+  position: relative;
+  /* bottom: 50px; */
+}
+.section-2 .container h2{
+  margin: 0;
+}
+
+.skill {
+  width: 120px;
+  height: 120px;
+  border: 1px solid #ddd;
+  display: inline-block;
+  padding: 20px;
+  padding-top: 30px;
+  margin: 5px;
+  border-radius: 5px;
+  box-shadow: 0 0.5rem 2.5rem rgb(60 127 239 / 15%);
+  position: relative;
+  font-size: 15px;
+  line-height: 50px;
+  color: #888;
+}
+
+.section-2 .container .about p {
+  position: relative;
+  top: 0;
+  white-space: unset;
+  line-height: 24px;
+}
+
+.skill .icon {
+  width: 50px;
+  margin: auto;
+}
+
+.react-icon , .node-icon{
+  font-size: 50px;
+}
+
+.react-icon{
+  fill: #16a5d4;
+}
+
+.node-icon{
+  fill: #43853d;
+}
+
+.skill:before,
+.skill:after {
+  content: "";
+  position: absolute;
+  right: -1px;
+  bottom: -0.5px;
+  left: -1px;
+  height: 9px;
+  box-sizing: border-box;
+  border-radius: 5px;
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.skill:after {
+  right: 50%;
+  left: 50%;
+  background: yellow;
+  transition: left 0.3s, right 0.3s;
+}
+
+.skill:hover {
+  transform: translateY(-5%);
+  transition: 0.4s;
+}
+
+.skill:hover:after {
+  left: -1px;
+  right: -1px;
+}
+
+.skill.html:before {
+  background-color: rgba(228, 78, 38, 0.2);
+}
+
+.skill.html:after {
+  background-color: rgba(228, 78, 38, 0.8);
+}
+
+.skill.css:before {
+  background-color: rgba(21, 114, 182, 0.2);
+}
+
+.skill.css:after {
+  background-color: rgba(21, 114, 182, 0.8);
+}
+
+.skill.javascript:before {
+  background-color: rgba(240, 219, 79, 0.4);
+}
+
+.skill.javascript:after {
+  background-color: rgba(240, 219, 79, 1);
+}
+
+/* .skill.react:before {
+  background-color: rgba(240, 219, 79, 0.4);
+}
+
+.skill.react:after {
+  background-color: rgb(30, 131, 225);
+} */
+
+.skill.jquery:before {
+  background-color: rgba(8, 104, 172, 0.2);
+}
+
+.skill.jquery:after {
+  background-color: rgba(8, 104, 172, 0.8);
+}
+
+.skill.bootstrap:before {
+  background-color: rgba(91, 66, 129, 0.2);
+}
+
+.skill.bootstrap:after {
+  background-color: rgba(91, 66, 129, 0.8);
+}
+
+.skill.node-js:before {
+  background-color: rgba(4, 118, 54, 0.4);
+}
+
+.skill.node-js:after {
+  background-color: #43853d;
+}
+
+.skill.github:before {
+  background-color: rgba(236, 81, 40, 0.2);
+}
+
+.skill.github:after {
+  background-color: rgba(236, 81, 40, 0.8);
+}
+
+.skill.react:before {
+  background-color: #9DCFE9;
+}
+
+.skill.react:after {
+  background-color: #0a7dbb;
+}
+
+/* close setion 2 */
+.section-3 {
+  width: 100%;
+  padding-top: 3em;
+  text-align: center;
+  position: relative;
+  font-size: 16px;
+}
+
+.section-3 .container {
+  width: 64%;
+  padding: 3.5em 0 1.5em 0;
+  margin: auto;
+  position: relative;
+}
+
+.section-3 .background {
+  background: #f3f3f3;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: -1;
+  transform: skewY(-6deg);
+}
+
+.projects {
+  max-width: 100%;
+  position: relative;
+}
+
+.projects .project {
+  display: inline-block;
+  margin: 20px 9px;
+  white-space: inherit;
+  max-width: 300px;
+  max-height: 300px;
+  vertical-align: middle;
+  font-size: 15px;
+  color: #888;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 0 0 5px 5px;
+  transition: all 0.4s ease;
+  border: 1px solid #ddd;
+  padding: 1rem;
+  background-color: #fff;
+  /* border: 10px; */
+  border-radius:10px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.demo , .code{
+  border : 1px solid #ddd;
+  padding: 0.3rem 1rem;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.demo a , .code a{
+  text-decoration: none;
+}
+
+.projects .project:hover{
+  transform: translatey(-15px);
+}
+
+strong {
+  position: relative;
+  top: 10px;
+  font-weight: 700;
+  color: #000;
+}
+
+.portfolio {
+  width: 100%;
+  margin: auto;
+  white-space: unset;
+  font-size: 17px;
+  color: #888;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+
+.projects .project img {
+  max-width: 100%;
+  display: block;
+  margin: auto;
+  height: auto;
+  border-radius: 5px;
+}
+
+.section-4 {
+  width: 100%;
+  position: relative;
+  top: 100px;
+  text-align: center;
+}
+
+.section-4 .container {
+  width: 64%;
+  margin: auto;
+  padding: 10px;
+  font-family: sans-serif;
+  color: #0b4786;
+  padding: 0em 0 3.5em 0;
+}
+
+.section-4 .container .content h2 {
+  font-weight: 800;
+}
+
+.section-4 .container ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.social-media {
+  padding-bottom: 20px;
+}
+
+.section-4 .container ul li {
+  display: inline-block;
+  padding: 5px;
+  font-size: 25px;
+}
+
+.section-4 .container ul li a {
+  color: #0b4786;
+  width: 60px;
+  height: 60px;
+  line-height: 60px;
+  display: block;
+  background: #ddd;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+  transition: 1s;
+}
+
+.section-4 .container ul li a .fa {
+  position: relative;
+  color: #fff;
+  transition: 1.2s;
+  z-index: 3;
+}
+
+.section-4 .container ul li a:hover .fa {
+  transform: rotateX(360deg);
+}
+
+.section-4 .container ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  background: #ddd;
+  transition: 1s ease;
+  z-index: 2;
+}
+
+.section-4 .container ul li a:hover:before {
+  top: 0;
+}
+
+.email {
+  font-weight: 700;
+  color: #784594;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.section-4 .container ul li:nth-child(1) a:hover:before {
+  background-color: #34465d;
+}
+
+.section-4 .container ul li:nth-child(2) a:hover:before {
+  background-color: #55acee;
+  background-color: #006400;
+
+}
+
+.section-4 .container ul li:nth-child(3) a:hover:before {
+  background-color: #800080;
+
+}
+
+
+/* make button for go to top */
+
+.goToTop {
+  position: fixed;
+  right: 10px;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  border-radius: 50%;
+  bottom: 36px;
+  background-color: rgb(245, 194, 6);
+  color:#fff;
+  transform: scale(0);
+  cursor: pointer;
+}
+
+.addTopClass{
+  transition: all 0.5 ease-in-out;
+  transform: scale(1);
+}
+/*  start media queries here for majke website responsive in the all verious device */
+
+
+@media screen and (max-width:1017px) {
+  .section-3 .container {
+    width: 80%;
+  }
+}
+
+
+  .section-4 .container ul li a:hover {
+    color: #0b4786;
+    transition: 0.4s;
+  }
+
+  .fa-heart {
+    color: red;
+  }
+
+  @media screen and (max-width: 871px) {
+    .header header {
+      width: 90%;
+      padding-bottom: 10px;
+    }
+
+
+    .title {
+      font-size: 40px;
+    }
+
+    .menu {
+      width: 100%;
+      display: none;
+    }
+
+    .menu ul li {
+      display: block;
+      text-align: center;
+      margin: 20px 0;
+      border-bottom: 1px solid rgb(247, 201, 30);
+      line-height: 20px;
+    }
+
+    .logo {
+      font-size: 15px;
+      width: 40%;
+      text-align: left;
+    }
+
+    .hamburgur {
+      width: 59%;
+      display: inline-block;
+      text-align: right;
+      vertical-align: middle;
+      cursor: pointer;
+    }
+
+    .active {
+      display: block;
+      transition: 1s;
+      z-index: -1;
+    }
+
+    .section-1 .content .container,
+    .section-2 .container,
+    .section-3 .container,
+    .section-4 .container {
+      width: 90%;
+    }
+  }
+
+
+
+  @media screen and (max-width:729px) {
+    .section-3 .container {
+      width: 100%;
+    }
+
+    .portfolio {
+      width: 80%;
+    }
+
+    .projects .project {
+      max-width: 260px;
+      height: auto  ;
+      /* height: 260px; */
+    }
+  }
+
+  @media screen and (max-width:580px) {
+    .projects .project {
+      max-width: 300px;
+      height: 260px;
+      margin: 10px;
+    }
+  }
+
+  @media screen and (max-width:508px) {
+    .logo {
+      width: 65%;
+    }
+
+    .hamburgur {
+      width: 30%;
+      text-align: right;
+    }
+  }
+
+  @media screen and (max-width:450px) {
+    .skill {
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width:381px) {
+    .skill {
+      width: 80px;
+      height: 100px;
+    }
+  }
+
+  @media screen and (max-width:357px) {
+    .title {
+      font-size: 30px;
+      font-weight: 650;
+    }
+
+    .skill {
+      width: 120px;
+      height: 100px;
+    }
+}
