@@ -583,15 +583,12 @@ strong {
 
     .projects .project {
       max-width: 260px;
-      height: auto  ;
-      /* height: 260px; */
     }
   }
 
   @media screen and (max-width:580px) {
     .projects .project {
       max-width: 300px;
-      /* height: 260px; */
       margin: 10px;
     }
   }
