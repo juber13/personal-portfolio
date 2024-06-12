@@ -43,8 +43,10 @@ p {
 .menu {
   width: 60%;
   display: inline-block;
-  font-size: 16px;
+  font-size: 14px;
   color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
 }
 
 .hamburgur {
@@ -62,7 +64,7 @@ p {
 
 .menu ul li {
   display: inline-block;
-  padding: 0 13px;
+  padding: 0 12px;
 }
 
 .menu ul li a {
